@@ -1,0 +1,10 @@
+<div class="project-container">
+    <div *ngFor="let project of projects" class="project">
+        <a><img [src]="project.image" alt="project logo" class="project-logo"></a>
+        <h2><span class="id">{{ project.id }}|</span>&nbsp;<a [href]="project.link">{{ project.name }}</a></h2>
+        <blockquote>
+            {{ project.description }}
+        </blockquote>
+        <p class="status">Status: {{ project.status }}</p>
+    </div>
+</div>
